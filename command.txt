@@ -1,0 +1,35 @@
+Commands - 
+
+Configuring Git:
+git config --global user.name "vinit"
+git config --global user.email "bawjeeai@gmail.com"
+git config --list
+
+Clone & Status:
+git clone
+git status
+	-untracked
+	-modified
+	-staged
+	-unmodified
+	
+Add & Commit:
+git add <-file name->
+git commit -m "some message"
+
+Push:
+git push origin main
+
+Init:
+git init
+git remote add origin <- link ->
+git remote -v (to verify remote)
+git branch -M main (to rename branch)
+git push origin main
+
+Branch:
+git branch (to check branch)
+git branch -M main (to rename branch)
+git checkout <- branch name ->
+git checkout -b <- new branch name ->
+git branch -d <- branch name ->
