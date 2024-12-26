@@ -33,3 +33,29 @@ git branch -M main (to rename branch)
 git checkout <- branch name ->
 git checkout -b <- new branch name ->
 git branch -d <- branch name ->
+
+Merging:
+way 1 -
+ git diff <- branch name -> 
+ git merge <- branch name ->
+ way 2 -
+  Create a PR
+  
+Pull:
+git pull origin main  
+
+Merge:
+git diff main
+git merge main
+
+Undoing changes
+case1: staged changes
+git reset <- file name ->
+git reset
+
+case2: commited chages (for one commit)
+git reset HEAD~1
+
+case3: commited changes (for many commits)
+git reset <- commit hash ->
+git reset --hard <- commit hash ->
